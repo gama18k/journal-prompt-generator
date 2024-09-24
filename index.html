@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>journal prompt generator ✨</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container-lg mx-auto d-flex flex-column justify-content-center align-items-center vh-100">
+    <h1 class="space-mono-regular">journal prompt generator ✨</h1>
+    <p class="frase mt-3" id="frase"></p>
+    <div class="d-grid gap-2 col-2 mx-auto">
+      <button type="button" class="btn btn-rosa-claro  m-3" onclick="gerarFrase()"> <i class="fa-solid fa-rotate"></i> generate</button>
+    </div>
+  </div>
+
+  <script>
+    const frases = [
+      "Do you like travelling?",
+      "How often do you dance?",
+      "Why are you studying English?",
+      "How important is your family to you?",
+      "Do you have the ideal family?",
+      "Do you like flying?",
+      "How often do you think about food?",
+      "How often do you use Google?",
+      "How often do you go to the library?",
+      "Do you always have three meals a day?",
+      "Do you cook your own meals?",
+      "How often do you think about money?",
+      "What movie would you like to live in?",
+      "Do you think the news is usually happy or sad?",
+      "Do you like rain?",
+      "Do you like playing sports?",
+      "Are you a good student?",
+      "Are you a family person?",
+      "What are important numbers in your life?",
+      "Would you like to be an actor?",
+      "What is Africa/America/Asia/Europe famous for?",
+      "What kinds of books do you like?",
+      "What is the most beautiful country in the world?",
+      "What country would you love to live in?",
+      "How important do you think education is?",
+      "How important is email to you?",
+      "What are the best things about Facebook?",
+      "Do you believe in God?",
+      "How is your health?",
+      "Could you live without the Internet?",
+      "What is the funniest joke that you know?",
+      "Would you like to work in a library?",
+      "Would you like to read more?",
+      "Would you like to go on a shopping holiday?",
+      "Do you think that it is always safe to use a taxi?",
+      "What are your favourite toys?",
+      "Do you like Valentine’s Day?",
+      "How would you describe yourself in three words?",
+      "What is beauty?",
+      "What does driving mean to you?",
+      "Do you think that divorce is a sin?",
+      "What do you know about illegal drugs?",
+      "What do you do in your life to care for the Earth?",
+      "Do you think that it is possible to save the Earth?",
+      "What is your biggest fear?",
+      "Why do you think that football is the world’s most popular sport?",
+      "Are you happy that you are the gender that you are?",
+      "Is crime a problem where you live?",
+      "What do you know about Walt Disney?",
+      "What makes a friend a best friend?",
+      "Do you ever worry about losing your friends?",
+      "How similar are you to your friends?",
+      "What makes a joke funny?",
+      "What is the best way to increase your knowledge?",
+      "What do you think about your language?",
+      "How is our language different from animal language?",
+      "Why do women like shopping more than men?",
+      "Why do so many people like sports?",
+      "Are you stressed at the moment?",
+      "Do you think that being a student was the best time of your life?",
+      "Is success important to you?",
+      "What has the USA given to the world?",
+      "Is your teacher good at teaching vocabulary?",
+      "Does war ever do any good?",
+      "Who are the greatest women in your country’s history?",
+      "What are your favourite English words?",
+      "What is the best job in the world?"
+    ];
+
+    function gerarFrase() {
+      const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
+      document.getElementById("frase").innerText = fraseAleatoria;
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
