@@ -1,0 +1,28 @@
+body {
+    background-color: #121212;
+    color: beige;
+    font-family: "Space Mono", monospace !important;
+
+}
+
+
+.btn-rosa-claro {
+    background-color: #FFB6C1 !important;
+    /* Rosa claro */
+    color: #121212 !important;
+    /* Cor do texto */
+    transition: background-color 0.6s ease, color 0.6s ease !important;
+    /* Transição suave */
+
+}
+
+.btn-rosa-claro:hover {
+    background-color: #bd709a !important;
+    /* Rosa médio no hover */
+    color: #fff !important;
+    /* Cor do texto no hover */
+}
+
+.frase {
+    color: rgb(255, 226, 236);
+}
